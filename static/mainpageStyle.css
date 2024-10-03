@@ -1,0 +1,45 @@
+/*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* Section Style *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
+.slideContainer {
+	width: 100%;
+	border: 3px solid rgb(255, 0, 212);
+    position: relative;
+    height: 30rem;
+}
+
+.slides{
+    display: flex;
+    border: 3px solid  yellow;
+    width: 300%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+.slide{
+    flex: 1;
+    height: 100%;
+}
+
+
+/* slidebtn  */
+.slideBtn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pre{
+    left: var(--layoutpadding);
+}
+.next{
+    right: var(--layoutpadding);
+}
