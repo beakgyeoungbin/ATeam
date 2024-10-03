@@ -28,7 +28,7 @@
                 <p><span>B</span>-Team</p>
                 <div class="language">
                     <p>KR</p>
-                    <p>UN</p>
+                    <p>EN</p>
                 </div>
             </div>
 
@@ -165,16 +165,24 @@
                 <div class="userGender formText">
                     <label for="user-gender">성별 <span class="identify">*</span></label>
                     <div class="radioBox formStyle">
-                        <input type="radio" id="r1" name="rr" />
-                        <label for="r1"><span></span>남자</label>
-
-                        <input type="radio" id="r2" name="rr" />
-                        <label for="r2"><span></span>여자</label>
-
-                        <input type="radio" id="r3" name="rr" />
-                        <label for="r3"><span></span>선택안함</label>
+                        <input type="radio" id="gender01" name="gender" />
+                        <label for="gender01">
+                            <div class="CheckB"></div>남자
+                        </label>
+                        <input type="radio" id="gender02" name="gender" />
+                        <label for="gender02">
+                            <div class="CheckB"></div>여자
+                        </label>
+                        <input type="radio" id="gender03" name="gender" />
+                        <label for="gender03">
+                            <div class="CheckB"></div>선택안함
+                        </label>
                     </div>
                 </div>
+
+
+
+
                 <div class="userBirth formText">
                     <label for="user-birth">생년월일 <span class="identify">*</span></label>
                     <input type="date" class="formStyle" placeholder="yyyy/mm/dd">
@@ -183,36 +191,44 @@
                 <!-- 약관동의 입력 -->
 
                 <div class="agreeContainer">
-                    <p>이용약관동의<span class="identify">*</span>
+                    <p>
+                        이용약관동의<span class="identify">*</span>
                     </p>
                     <div class="agreeContent">
-                        <p>
-                            <input type="checkbox" id="agree01" name="agree" class="agreeBox"/>
-                            <label for="agree01"><span></span>전체 동의합니다. 
+                        <div class="agreeCon">
+                            <input type="checkbox" id="agree01" name="agree" class="agreeBox">
+                            <label for="agree01">
+                                <div class="inputCircle"></div>전체 동의합니다.
                             </label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="agree02" name="agree" class="agreeBox"/>
-                            <label for="agree02"><span></span>이용약관 동의</label>
-                        </p>
-                        <p>
-                            <input type="checkbox" id="agree03" name="agree" class="agreeBox"/>
-                            <label for="agree03"><span></span>개인정보 수집 and 이용 동의</label>
-                        
-                        </p>
-                        <p>
-                            <input type="checkbox" id="agree04" name="agree" class="agreeBox"/>
-                            <label for="agree04"><span></span>개인정보 수집 and 이용 동의</label>
-                        </p>    
-                        <p>
-                            <input type="checkbox" id="agree05" name="agree" class="agreeBox"/>
-                            <label for="agree05"><span></span>무료배송, 할인쿠폰 등 혜택/정보 수신 동의</label>
-                        </p>                            
-                        <p>
-                            <input type="checkbox" id="agree06" name="agree" class="agreeBox"/>
-                            <label for="agree06"><span></span>본인은 14세 이상입니다.</label>
-                        </p>   
-
+                        </div>
+                        <div class="agreeCon">
+                            <input type="checkbox" id="agree02" name="agree" class="agreeBox">
+                            <label for="agree02">
+                                <div class="inputCircle"></div>이용약관 동의 &ensp;<span>( 필수 )</span>
+                            </label>
+                            <div class="viewMore">약관보기+</div>
+                        </div>
+                        <div class="agreeCon">
+                            <input type="checkbox" id="agree03" name="agree" class="agreeBox">
+                            <label for="agree03">
+                                <div class="inputCircle"></div>개인정보 수집 및 이용 동의 &ensp;<span>( 필수 )</span>
+                            </label>
+                            <div class="viewMore">약관보기+</div>
+                        </div>
+                        <div class="agreeCon">
+                            <input type="checkbox" id="agree04" name="agree" class="agreeBox">
+                            <label for="agree04">
+                                <div class="inputCircle"></div>개인정보 수집 및 이용 동의 &ensp;<span>( 선택 )</span>
+                            </label>
+                            <div class="viewMore">약관보기+</div>
+                        </div>
+                        <div class="agreeCon">
+                            <input type="checkbox" id="agree05" name="agree" class="agreeBox">
+                            <label for="agree05">
+                                <div class="inputCircle"></div>본인은 14세 이상입니다. &ensp;<span>( 필수 )</span>
+                            </label>
+                            <div class="viewMore">약관보기+</div>
+                        </div>
                     </div>
 
                 </div>
@@ -226,10 +242,6 @@
 
             </form>
 
-
-
-
-
         </div>
     </main>
     <footer>
@@ -237,8 +249,8 @@
     </footer>
 
 
-    <script src="/static/headerModul.js"></script>
-    <script src="/static/signModul.js"></script>
+    <script src="../static/headerModul.js"></script>
+    <script src="../static/signModul.js"></script>
 </body>
 
 </html>
