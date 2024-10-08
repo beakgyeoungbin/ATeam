@@ -24,8 +24,13 @@
     --subtitleFont: 20px;
     --contentFont: 16px;
 
-    /* layoutpadding  */
-    --layoutpadding : 5vw;
+    /* layout  */
+    --pageMinWidth : 1024px;
+    --layoutpadding : 10vw;
+
+    /* FontColor */
+    --subFontColor : rgb(150, 150, 150);
+
 
 
 }

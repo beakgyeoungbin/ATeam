@@ -21,11 +21,16 @@ window.addEventListener('scroll',function(){
     
 });
 
-//slide event 관련 스크립트 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
-const slides = document.querySelector(".slides");
-const slide = document.querySelector(".slide");
-console.log(slides);
+// 마우스 이벤트
+const categoryContainer = document.querySelector(".categoryContainer");
+const categoryName = categoryContainer.querySelector("p");
 
-//slide setting
+categoryContainer.addEventListener('mouseenter', (event) => {
+    categoryName.style.color = "#f7418f";
+    categoryName.querySelector("i").style.color = "#f7418f";
+});
 
-
+categoryContainer.addEventListener('mouseleave', (event) => {
+    categoryName.style.color = "";
+    categoryName.querySelector("i").style.color = "";
+});
