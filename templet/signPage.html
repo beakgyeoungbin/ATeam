@@ -17,19 +17,17 @@
 
 <body>
     <header>
-
         <div class="headerBanner">
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur sunt libero odit pariatur tempore
                 facilis magni quia veritatis</p>
             <div class="closeBtn"><i class="fa-solid fa-x"></i></div>
         </div>
+
         <div class="headerUp_Container">
             <div class="headerLogo">
-                <p><span>B</span>-Team</p>
-                <div class="language">
-                    <p>KR</p>
-                    <p>EN</p>
-                </div>
+                <a href="mainPage.html">
+                    <p><span>B</span>-Team</p>
+                </a>
             </div>
 
             <div class="searchContainer">
@@ -54,18 +52,24 @@
                     </a>
                 </li>
                 <li class="login">
-                    <a href="#">
+                    <a href="loginPage.html">
                         <p>
                             <i class="fa-regular fa-user"></i>
                         </p>
                     </a>
                 </li>
                 <li class="customerService">
-                    <a href="#">
+                    <a href="csPage.html">
                         <p>
                             <i class="fa-solid fa-headset"></i>
                         </p>
                     </a>
+                    <ul>
+                        <li><a href="csPage.html">공지사항</a></li>
+                        <li><a href="csPage.html">자주하는 질문</a></li>
+                        <li><a href="csPage.html">1:1 문의</a></li>
+                        <li><a href="csPage.html">대량주문 문의</a></li>
+                    </ul>   
                 </li>
             </ul>
         </div>
@@ -115,6 +119,12 @@
                 <li><a href="#">NEW</a></li>
                 <li><a href="#">Seler</a></li>
             </ul>
+            <div class="languageContainer">
+                <div class="language">
+                    <p>KR</p>
+                    <p>EN</p>
+                </div>
+            </div>
         </div>
     </header>
     <main>
@@ -248,7 +258,7 @@
 
     </footer>
 
-
+    <script src="../static/ATeamModul.js"></script>
     <script src="../static/headerModul.js"></script>
     <script src="../static/signModul.js"></script>
 </body>

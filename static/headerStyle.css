@@ -11,7 +11,7 @@ header {
 }
 /*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-* ScrollHeader Style *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 .scrollHeader {
-	background-color: rgb(240, 240, 240)
+	background-color: rgb(255, 255, 255)
 }
 
 .scrollHeader>.headerUp_Container>.headerLogo>p {
@@ -62,14 +62,16 @@ header {
 	justify-content: start;
 	align-items: center;
 }
-
-.headerLogo>p {
+.headerLogo>a{
+	display: block;
+}
+.headerLogo>a>p {
 	font-size: 40px;
 	font-weight: bold;
 	transition: .2s;
 }
 
-.headerLogo>p>span {
+.headerLogo>a>p>span {
 	color: var(--mainColor);
 }
 

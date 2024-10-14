@@ -87,4 +87,23 @@ function slideEvent(con01) {
 }
 
 
+// CHECKBOX EVENT -*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*
+function checkBox( content , content02 ){
+    const firstCheckBox = document.querySelector(content);
+    const AllcheckBox = document.querySelectorAll(content02);
+
+
+
+    firstCheckBox.addEventListener('change',function(){
+        if( firstCheckBox.checked){
+            AllcheckBox.forEach(item =>{
+                item.checked = true;
+            });
+        }else{
+            AllcheckBox.forEach(item => {
+                item.checked = false; 
+            });
+        }
+    });
+}
 
